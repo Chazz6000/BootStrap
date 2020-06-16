@@ -1,0 +1,49 @@
+﻿@page
+@{
+    ViewData["Title"] = "BackGroundColor";
+}
+
+<h2>BackGroundColor</h2>
+<style>
+    .myDiv {
+        width: 200px;
+        height: 200px;
+        margin: 20px 10px;
+        padding: 20px;
+        color: white;
+        display: inline-block;
+    }
+
+    #Red {
+        background-color: red;
+    }
+
+    #Green {
+        background-color: green;
+    }
+
+    #White {
+        background-color: white;
+    }
+</style>
+
+<div class="myDiv" id="Red">Hello Bootstrap</div>
+<div class="myDiv" id="Green">Hello Bootstrap</div>
+
+<hr />
+
+
+
+
+
+<div class="myDiv bg-primary">Hello Bootstrap</div>
+<div class="myDiv bg-primary">Hello Boostrap</div>
+<div class="myDiv bg-primary">Hello Boostrap</div>
+<div class="myDiv bg-primary">Hello Boostrap</div>
+
+
+<hr />
+
+<div>
+    <a asp-page="/BootStrapPages/Links" class="btn btn-primary">Back</a>
+</div>

@@ -1,0 +1,77 @@
+﻿@page
+@{
+    ViewData["Title"] = "FlexibleBox";
+}
+
+<h1>Flexible Box</h1>
+
+<style>
+    mydiv{
+        border: 1px solid green;
+    }
+
+    section{
+        background: #f1f1f1;
+        height: 200px;
+    }
+    
+</style>
+
+
+
+
+<p>
+    in order to display anything in a flexibily box it needs to be displaed as an flex item.
+    <br />
+    You can reverse the items int a flex box as follows, 
+    <br />
+    
+    class="d-flex flex-row-reverse"
+
+</p>
+
+<aside class="container">
+    <section class="d-flex flex-row-reverse">
+        <mydiv class="p-4">One</mydiv>
+        <mydiv class="p-4">Two</mydiv>
+        <mydiv class="p-4">Third</mydiv>
+    </section>
+</aside>
+
+<p>
+    Normally the Default would be 
+    <br />
+    class="d-flex flex-row justtify-content-left"
+    <br />
+    But we can move the Flex box to the center of the page.
+
+    Other attributes used are Between , around
+
+</p>
+
+<aside>
+    <section class="d-flex flex-row justify-content-center">
+        <mydiv class="p-4">One</mydiv>
+        <mydiv class="p-4">Two</mydiv>
+        <mydiv class="p-4">Three</mydiv>
+    </section>
+</aside>
+
+<hr />
+
+<p>
+    Now moving to column
+
+</p>
+
+<section class="d-flex flex-column-reverse">
+    <mydiv class="p-4">one</mydiv>
+    <mydiv class="p-4">Two</mydiv>
+    <mydiv class="p-4">Three</mydiv>
+</section>
+
+<hr />
+
+    <a asp-page="/BootStrapPages" class="btn  btn-primary">Back</a>
+
+

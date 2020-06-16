@@ -1,0 +1,47 @@
+﻿@page
+@{
+    ViewData["Title"] = "MediaBreakPoints";
+}
+
+<h2>MediaBreakPoints</h2>
+
+<h1 class="text-center display-1 my-2">Breakpoints in BootStrap</h1>
+
+
+<style>
+    @@media(min-width:579px) {
+        body {
+            background: cyan;
+        }
+    }
+
+    @@media(min-width:768px) {
+        body {
+            background: lightblue;
+        }
+    }
+
+    @@media(min-width:992px) {
+        body {
+            background: red;
+        }
+    }
+
+    @@media(min-width:1200px) {
+        body {
+            background: black;
+        }
+    }
+
+    @@media(min-width:1300px) {
+        body {
+            background: grey;
+        }
+    }
+</style>
+
+
+
+<div>
+    <a asp-page="/BootStrapPages/Links" class="btn btn-primary">Back</a>
+</div>
